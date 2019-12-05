@@ -3,3 +3,11 @@
     height: 100px;
     background-color: aqua
 }
+#container{
+    height: 400px;
+}
+#footer{
+    width: 400px;
+    height: 100px;
+    background-color: black;
+}
