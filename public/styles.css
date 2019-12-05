@@ -11,6 +11,10 @@
     height: 100px;
     background-color: black;
 }
+@font-face {
+    font-family: ('retro');
+    src: url('fonts/disposabledroid-bb.bold.ttf');
+}
 .button-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -19,27 +23,81 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-  .button {
+.button {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+    color: white;
+    font-family: 'retro', sans-serif;
+    text-shadow: 2px 2px #807870;
+
   }
-  .normal {}
-  .fight {}
-  .flying{}
-  .poison{}
-  .ground{}
-  .rock{}
-  .bug{}
-  .ghost{}
-  .steel{}
-  .fire{}
-  .water{}
-  .grass{}
-  .electric{}
-  .psychic{}
-  .ice{}
-  .dragon{}
-  .dark{}
+.normal {
+    background-color: #a8a878;
+    box-shadow: 4px 4px 0px 4px #705848
+}
+.fight {
+    background-color: #c03028;
+    box-shadow: 4px 4px #484038
+}
+.flying{
+    background-color: #a890f0;
+    box-shadow: 5px 10px #888888
+}
+.poison{
+    background-color: #a040a0;
+    box-shadow: 5px 10px #888888
+}
+.ground{
+    background-color: #e0c068;
+    box-shadow: 5px 10px #888888
+}
+.rock{
+    background-color: #b8a038;
+    box-shadow: 5px 10px #888888
+}
+.bug{
+    background-color: #a8b820;
+    box-shadow: 5px 10px #888888
+}
+.ghost{
+    background-color: #705898;
+    box-shadow: 5px 10px #888888
+}
+.steel{
+    background-color: #b8b8d0;
+    box-shadow: 5px 10px #888888
+}
+.fire{
+    background-color: #f08030;
+    box-shadow: 5px 10px #888888
+}
+.water{
+    background-color: #6890f0;
+    box-shadow: 5px 10px #888888
+}
+.grass{
+    background-color: #78c850;
+    box-shadow: 5px 10px #888888
+}
+.electric{
+    background-color: #f8d030;
+    box-shadow: 5px 10px #888888
+}
+.psychic{
+    background-color: #f85888;
+    box-shadow: 5px 10px #888888
+}
+.ice{
+    background-color: #98d8d8;
+    box-shadow: 5px 10px #888888
+}
+.dragon{
+    background-color: #7038f8;
+    box-shadow: 5px 10px #888888
+}
+.dark{
+    background-color: #705848;
+    box-shadow: 5px 10px #807870
+}
