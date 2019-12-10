@@ -10,6 +10,13 @@
     width: 400px;
     height: 100px;
     background-color: black;
+    border: 4px solid black;
+}
+.collapsible {
+    box-shadow: 0px;
+}
+.collapsible-header {
+    border: 4px solid black;
 }
 .button-grid {
     display: grid;
