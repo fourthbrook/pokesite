@@ -9,7 +9,7 @@ function buttonPress(clicked_id) {
     if(pressed[0]==null) {
         pressed[0] = clicked_id;
         alert(pressed[0]);
-        clicked_id.addClass('pressed')
+        document.getElementById(clicked_id).classList.add('pressed');
     } else if(pressed[0]==clicked_id){
         pressed[0] = null;
         alert(pressed[0])
