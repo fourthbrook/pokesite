@@ -3,16 +3,23 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Collapsible.init(elems);
 });
 
-var button1 = null;
-var button2 = null;
+var pressed = [null, null];
 function buttonPress(clicked_id) {
-    if(button1==null) {
-        var button1 = clicked_id;
-        alert(clicked_id)
-    
-    } else if(button1==clicked_id) {
-        var button1 = null;
-    } else{
-        var button2 = clicked_id;
+    var element = clicked_id;
+    if(pressed[0]==null) {
+        pressed[0] = clicked_id;
+        alert(pressed[0]);
+        clicked_id.addClass('pressed')
+    } else if(pressed[0]==clicked_id){
+        pressed[0] = null;
+        alert(pressed[0])
+    }else if(pressed[1]==null) {
+        pressed[1] = clicked_id;
+        alert(pressed[1])
+    } else if(pressed[1]==clicked_id){
+        pressed[1] = null;
+        alert(pressed[1])
+    } else {
+        alert("Only two types can be selected")
     }
 }
