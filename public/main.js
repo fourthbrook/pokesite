@@ -8,17 +8,16 @@ function buttonPress(clicked_id) {
     var element = clicked_id;
     if(pressed[0]==null) {
         pressed[0] = clicked_id;
-        alert(pressed[0]);
         document.getElementById(clicked_id).classList.add('pressed');
     } else if(pressed[0]==clicked_id){
         pressed[0] = null;
-        alert(pressed[0])
+        document.getElementById(clicked_id).classList.remove('pressed');
     }else if(pressed[1]==null) {
         pressed[1] = clicked_id;
-        alert(pressed[1])
+        document.getElementById(clicked_id).classList.add('pressed');
     } else if(pressed[1]==clicked_id){
         pressed[1] = null;
-        alert(pressed[1])
+        document.getElementById(clicked_id).classList.remove('pressed');
     } else {
         alert("Only two types can be selected")
     }
