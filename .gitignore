@@ -1,3 +1,6 @@
+# travis
+.travis.yml
+
 # Logs
 logs
 *.log
