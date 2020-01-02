@@ -4,9 +4,5 @@ node_js:
   - "12.14.0"
 script:
   - echo "Deploying!"
-deploy:
-  provider: firebase
-  token:
-    secure: "1//06qrZgmdbDHubCgYIARAAGAYSNwF-L9IrIVTvgYXFzAdfe6bkTtBazBK5YwJEOwQ_7skZuo7OY0e8M95UJ-26yaQByxYHRSVVuSE"
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
