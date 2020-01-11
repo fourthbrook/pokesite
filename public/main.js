@@ -7,7 +7,6 @@ var pressed = [null, null];
 function buttonPress(clicked_id) {
     var element = clicked_id;
     if(pressed[0]==null && pressed[1]!=clicked_id) {
-        
         pressed[0] = clicked_id;
         document.getElementById(clicked_id).classList.add('pressed');
     } else if(pressed[0]==clicked_id){
