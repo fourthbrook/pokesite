@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible">
+        <title>pokesite</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="row">
+            <div class="container col s10 offset-s1 ">
+                <div class="row">
+                    <div class="header"></div>
+                </div>
+                <div class="row">
+                    <ul class="collapsible">
+                        <li class="active">
+                            <div class="collapsible-header">First</div>
+                            <div class="collapsible-body">
+                                <div class="button-grid">
+                                    <div class="button" id="normal" onclick="buttonPress(this.id)">NORMAL</div>
+                                    <div class="button" id="fight" onclick="buttonPress(this.id)">FIGHT</div>
+                                    <div class="button" id="flying" onclick="buttonPress(this.id)">FLYING</div>
+                                    <div class="button" id="poison" onclick="buttonPress(this.id)">POISON</div>
+                                    <div class="button" id="ground" onclick="buttonPress(this.id)">GROUND</div>
+                                    <div class="button" id="rock" onclick="buttonPress(this.id)">ROCK</div>
+                                    <div class="button" id="bug" onclick="buttonPress(this.id)">BUG</div>
+                                    <div class="button" id="ghost" onclick="buttonPress(this.id)">GHOST</div>
+                                    <div class="button" id="steel" onclick="buttonPress(this.id)">STEEL</div>
+                                    <div class="button" id="fire" onclick="buttonPress(this.id)">FIRE</div>
+                                    <div class="button" id="water" onclick="buttonPress(this.id)">WATER</div>
+                                    <div class="button" id="grass" onclick="buttonPress(this.id)">GRASS</div>
+                                    <div class="button" id="electric" onclick="buttonPress(this.id)">ELECTR</div>
+                                    <div class="button" id="psychic" onclick="buttonPress(this.id)">PSYCHC</div>
+                                    <div class="button" id="ice" onclick="buttonPress(this.id)">ICE</div>
+                                    <div class="button" id="dragon" onclick="buttonPress(this.id)">DRAGON</div>
+                                    <div class="button" id="dark" onclick="buttonPress(this.id)">DARK</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Battle Effectiveness</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Pokemon to Train Against</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="footer"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <script src="main.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.5.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.5.0/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>
